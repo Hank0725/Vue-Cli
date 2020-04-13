@@ -18,8 +18,12 @@
     </ul>
   </div>
 </nav>
-    <img src="./assets/logo.png">
-    <router-view></router-view>
+    
+     <router-view name="menu"></router-view>
+    <div class="container">
+      <router-view></router-view>
+    </div>
+    
   </div>
 
 </template>
@@ -36,7 +40,7 @@ export default {
   created(){
     this.$http.get("https://randomuser.me/api/")
     .then((response) =>{
-      console.log(response.data)
+      // console.log(response.data)
     })
   }
 }
