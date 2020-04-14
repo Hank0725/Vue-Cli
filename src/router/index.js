@@ -11,6 +11,8 @@ import Menu from "@/components/pages/menu";
 Vue.use(VueRouter);
 
 export default new VueRouter({
+    // mode:"history",
+    linkActiveClass:"active",
  routes:[
      {
      name:"首頁",//元件呈現的名稱
